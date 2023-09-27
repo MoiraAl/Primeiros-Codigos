@@ -1,0 +1,39 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 600, 400); 
+
+//Considerando uma bandeira 600x400
+//Coordenadas [x, y]
+//600 x (0 + 20) //cima
+//(600 - 20) x (400/2) // direita
+//(600/2) x (400-0)// baixo
+//(0 + 20) x (400/2)// esquerda
+
+pincel.fillStyle = 'yellow'; //triangulo cima
+pincel.beginPath();
+pincel.moveTo(300, 20); //direita
+pincel.lineTo(580, 200);// baixo
+pincel.lineTo(20, 200); //esquerda
+pincel.fill(); 
+
+pincel.fillStyle = 'yellow'; //triangulo baixo
+pincel.beginPath();
+pincel.moveTo(300, 380);
+pincel.lineTo(580, 200);
+pincel.lineTo(20, 200);
+pincel.fill();
+
+pincel.fillStyle = 'darkblue';
+pincel.beginPath();
+pincel.arc(300, 200, 100, 0,  2*3.14);
+pincel.fill();
+
+
+
+</script>
