@@ -1,2 +1,2 @@
 # Primeiros Códigos
- Resultado dos primeiros exercícios da Alura + Coud Girls
+ Resultado dos primeiros exercícios da Alura + Cloud Girls
